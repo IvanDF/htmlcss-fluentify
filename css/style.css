@@ -49,6 +49,9 @@ body {
   padding: 20px;
   text-align: center;
 }
+.w50 {
+  width: 50%;
+}
 
 /* Buttons */
 
@@ -77,10 +80,12 @@ h2,
 h3 {
   margin-bottom: 20px;
 }
+
 h1 {
   font-size: 56px;
 }
-h2 {
+h2,
+h3 {
   font-size: 28px;
 }
 
@@ -124,7 +129,9 @@ h2 {
   width: 40%;
 }
 
+/* MAIN */
 /* jumbotron */
+
 .jumbotron {
   height: 600px;
   position: relative;
@@ -147,4 +154,26 @@ h2 {
 .main-slogan p{
   color: #808080;
   font-size: 20px;
+}
+
+/* main-info */
+
+.main-info {
+  padding: 50px;
+  border-bottom: solid black 1px;
+}
+.main-info img {
+  height: 150px;
+}
+.main-info h3 {
+  margin-top: 25px;
+  color: #7cbb02;
+}
+.main-info h3::after {
+  content: '';
+  display: block;
+  margin: 20px auto;
+  height: 1px;
+  width: 60px;
+  background: #000;
 }
