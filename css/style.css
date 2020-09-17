@@ -27,20 +27,16 @@ body {
   display: table;
   clear: both;
 }
-
 .flt-l {
   float: left;
 }
-
 .list-inline li {
   display: inline-block;
   padding: 0 10px;
 }
-
 .list-inline li:first-child {
   padding-left: 0;
 }
-
 .list-inline li:last-child {
   padding-right: 0;
 }
@@ -57,20 +53,25 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-
 .btn-xl {
   padding: 15px ;
 }
-
 .btn-green {
   background: #7cbb02;
   border: none;
 }
 
 /* typography */
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
 h1 {
   font-size: 56px;
-  margin-bottom: 30px;
+}
+h2 {
+  font-size: 28px;
 }
 
 /* HEADER */
@@ -82,7 +83,6 @@ h1 {
   background-repeat: no-repeat;
   background-size: 50%;
 }
-
 .main-header a {
   color: #fff;
   text-decoration: none;
@@ -97,11 +97,9 @@ h1 {
   text-transform: uppercase;
 
 }
-
 .navbar-img {
   width: 15%;
 }
-
 .navbar-img img {
   display: inline-block;
   vertical-align: middle;
@@ -121,7 +119,6 @@ h1 {
   height: 600px;
   position: relative;
 }
-
 .jumbotron-txt{
   color: #fff;
   width: 50%;
@@ -129,4 +126,15 @@ h1 {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+}
+
+.main-slogan {
+  color: #000;
+  background: #d3d3d3;
+  text-align: center;
+  padding: 50px 10px;
+}
+.main-slogan p{
+  color: #808080;
+  font-size: 20px;
 }
