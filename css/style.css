@@ -9,3 +9,70 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+/* Container */
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Utilities */
+
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.flt-l {
+  float: left;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.list-inline li:first-child {
+  padding-left: 0;
+}
+
+.list-inline li:last-child {
+  padding-right: 0;
+}
+
+
+/* typography */
+a {
+
+}
+/* HEADER */
+
+.main-header {
+  line-height: 80px;
+  background: #0c325a;
+}
+
+/* navbar */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-img {
+  width: 15%;
+}
+
+.navbar-img img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-center {
+  width: 45%;
+}
+
+.navbar-right {
+  text-align: right;
+  width: 40%;
+}
