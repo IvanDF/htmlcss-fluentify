@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 /* Container */
@@ -31,7 +32,7 @@ body {
 
 .list-inline li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .list-inline li:first-child {
@@ -42,11 +43,29 @@ body {
   padding-right: 0;
 }
 
+/* Buttons */
 
-/* typography */
-a {
-
+.btn {
+  display: inline-block;
+  padding: 0 10px;
+  min-width: 100px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }
+
+.btn-xl {
+  padding: 15px ;
+}
+
+.btn-green {
+  background: #7cbb02;
+  border: none;
+}
+/* typography */
+
 /* HEADER */
 
 .main-header {
@@ -56,8 +75,10 @@ a {
 
 /* navbar */
 .navbar a {
+  font-size: 13px;
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .navbar-img {
   width: 15%;
