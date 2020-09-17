@@ -30,6 +30,10 @@ body {
 }
 
 /* layout */
+
+.txt-r {
+  text-align: right;
+}
 .flt-l {
   float: left;
 }
@@ -37,6 +41,11 @@ body {
   display: inline-block;
   padding: 0 10px;
 }
+
+.lh-footer {
+  line-height: 150px
+}
+
 .list-inline li:first-child {
   padding-left: 0;
 }
@@ -64,12 +73,14 @@ body {
   border-radius: 5px;
   line-height: 30px;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
 }
 .btn-xl {
   padding: 15px ;
 }
 .btn-green {
+  color: #fff;
   background: #7cbb02;
   border: none;
 }
@@ -87,17 +98,26 @@ p{
 h1 {
   font-size: 56px;
 }
+
 h2 {
   font-size: 30px;
   color: #000;
 }
+
 h3 {
   font-size: 28px;
 }
+
+h4 {
+  font-size: 28px;
+  color: #000;
+}
+
 p {
   font-size: 19px;
   line-height: 1.5;
 }
+
 a {
   color: #5586bc;
 }
@@ -138,7 +158,6 @@ a {
 }
 
 .navbar-right {
-  text-align: right;
   width: 40%;
 }
 
@@ -193,4 +212,17 @@ a {
 /* main plan */
 .main-plan h2 {
   font-size: 36px
+}
+
+/* FOOTER */
+.footer {
+  background: #d3d3d3;
+}
+
+.footer-title {
+  width: 30%;
+}
+
+.footer-form {
+  width: 70%;
 }
