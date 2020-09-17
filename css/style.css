@@ -51,6 +51,7 @@ body {
 }
 .w50 {
   width: 50%;
+  padding: 60px;
 }
 
 /* Buttons */
@@ -77,16 +78,28 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+p{
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 h1 {
   font-size: 56px;
 }
-h2,
+h2 {
+  font-size: 30px;
+  color: #000;
+}
 h3 {
   font-size: 28px;
+}
+p {
+  font-size: 19px;
+  line-height: 1.5;
+}
+a {
+  color: #5586bc;
 }
 
 /* HEADER */
@@ -146,7 +159,6 @@ h3 {
 }
 
 .main-slogan {
-  color: #000;
   background: #d3d3d3;
   text-align: center;
   padding: 50px 10px;
@@ -176,4 +188,9 @@ h3 {
   height: 1px;
   width: 60px;
   background: #000;
+}
+
+/* main plan */
+.main-plan h2 {
+  font-size: 36px
 }
