@@ -12,6 +12,7 @@ body {
 }
 
 /* Container */
+
 .container {
   width: 1200px;
   max-width: 100%;
@@ -64,9 +65,11 @@ body {
   background: #7cbb02;
   border: none;
 }
+
 /* typography */
 
 /* HEADER */
+
 
 .main-header {
   line-height: 80px;
@@ -74,12 +77,14 @@ body {
 }
 
 /* navbar */
+
 .navbar a {
   font-size: 13px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .navbar-img {
   width: 15%;
 }
@@ -96,4 +101,19 @@ body {
 .navbar-right {
   text-align: right;
   width: 40%;
+}
+
+/* jumbotron */
+.jumbotron {
+  height: 500px;
+  position: relative;
+}
+
+.jumbotron-txt{
+  color: #fff;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
