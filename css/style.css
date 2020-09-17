@@ -22,11 +22,14 @@ body {
 
 /* Utilities */
 
+/* clearfix */
 .clearfix::after {
   content: '';
   display: table;
   clear: both;
 }
+
+/* layout */
 .flt-l {
   float: left;
 }
@@ -39,6 +42,12 @@ body {
 }
 .list-inline li:last-child {
   padding-right: 0;
+}
+
+.col-3 {
+  width: calc(100% / 3);
+  padding: 20px;
+  text-align: center;
 }
 
 /* Buttons */
@@ -62,6 +71,7 @@ body {
 }
 
 /* typography */
+
 h1,
 h2,
 h3 {
