@@ -9,6 +9,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  color: #808080;
 }
 
 /* Container */
@@ -21,7 +22,7 @@ body {
 
 /* Utilities */
 
-.clearfix {
+.clearfix::after {
   content: '';
   display: table;
   clear: both;
@@ -67,22 +68,34 @@ body {
 }
 
 /* typography */
+h1 {
+  font-size: 56px;
+  margin-bottom: 30px;
+}
 
 /* HEADER */
 
-
 .main-header {
-  line-height: 80px;
-  background: #0c325a;
+  background-color: #0c325a;
+  background-image: url('../img/header/background-header.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.main-header a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* navbar */
 
-.navbar a {
-  font-size: 13px;
-  color: #fff;
-  text-decoration: none;
+.navbar {
+  display: block;
+  line-height: 80px;
+  font-size: 12px;
   text-transform: uppercase;
+
 }
 
 .navbar-img {
@@ -105,7 +118,7 @@ body {
 
 /* jumbotron */
 .jumbotron {
-  height: 500px;
+  height: 600px;
   position: relative;
 }
 
