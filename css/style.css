@@ -15,6 +15,8 @@ body {
 /* Help */
 
 .help-btn {
+  transition: all .3s;
+  box-shadow: 0 0 6px #230;
   text-transform: uppercase;
   color: #fff;
   background: #7cbb02;
@@ -23,7 +25,17 @@ body {
   bottom: 0;
   right: 20%;
   padding: 10px;
+  cursor: pointer;
 }
+.help-btn:hover {
+  transition: all .3s;
+  box-shadow: 0 0 10px #230;
+}
+.help-btn:active {
+  transition: all .3s;
+  box-shadow:none
+}
+
 /* Container */
 
 .container {
@@ -75,6 +87,7 @@ body {
   padding: 60px;
 }
 
+
 /* Buttons */
 
 .btn {
@@ -92,6 +105,19 @@ body {
   padding: 15px ;
 }
 .btn-green {
+  box-shadow: 0 0 6px #230;
+  color: #fff;
+  background: #7cbb02;
+  border: none;
+}
+.btn-green:hover {
+  box-shadow: 0 0 10px #230;
+  color: #fff;
+  background: #7cbb02;
+  border: none;
+}
+.btn-green:active {
+  box-shadow: none;
   color: #fff;
   background: #7cbb02;
   border: none;
@@ -147,10 +173,27 @@ a {
   background-repeat: no-repeat;
   background-size: 50%;
 }
+
 .main-header a {
   color: #fff;
   text-decoration: none;
 }
+.main-header a:not(.btn)::after {
+  content: '';
+  position: relative;
+  display: block;
+  height: 8px;
+  width: 0;
+  bottom: 40px;
+  left: -5%;
+  background: rgba(124, 187, 2, .3);
+  transition: all ease-out .4s;
+}
+.main-header a:not(.btn):hover::after {
+  transition: all ease-out .4s;
+  width: 110%;
+}
+
 
 /* navbar */
 
@@ -244,6 +287,7 @@ a {
 }
 
 .custom-select {
+  outline: none;
   display: block;
   font-size: 16px;
   color: #808080;
