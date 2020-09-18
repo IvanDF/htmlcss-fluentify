@@ -18,14 +18,25 @@ body {
   transition: all .3s;
   box-shadow: 0 0 6px #230;
   text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
   color: #fff;
   background: #7cbb02;
-  border-radius: 5px 5px 0 0;
+  border-radius: 8px 8px 0 0;
   position: fixed;
   bottom: 0;
-  right: 20%;
-  padding: 10px;
+  right: 5%;
+  padding: 10px 15px;
   cursor: pointer;
+}
+.help-btn:hover::after {
+  content: url('');
+  position: relative;
+  display: block;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
 }
 .help-btn:hover {
   transition: all .3s;
@@ -35,6 +46,7 @@ body {
   transition: all .3s;
   box-shadow:none
 }
+
 
 /* Container */
 
@@ -87,7 +99,6 @@ body {
   padding: 60px;
 }
 
-
 /* Buttons */
 
 .btn {
@@ -95,7 +106,7 @@ body {
   padding: 0 10px;
   min-width: 100px;
   border: solid 1px #fff;
-  border-radius: 5px;
+  border-radius: 8px;
   line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
@@ -178,6 +189,7 @@ a {
   color: #fff;
   text-decoration: none;
 }
+
 .main-header a:not(.btn)::after {
   content: '';
   position: relative;
@@ -187,10 +199,8 @@ a {
   bottom: 40px;
   left: -5%;
   background: rgba(124, 187, 2, .3);
-  transition: all ease-out .4s;
 }
 .main-header a:not(.btn):hover::after {
-  transition: all ease-out .4s;
   width: 110%;
 }
 
