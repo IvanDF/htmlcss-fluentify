@@ -28,7 +28,6 @@ body {
   padding: 10px 15px 15px;
   cursor: pointer;
 }
-
 .help-btn:after {
   content: url('../img/icon/arrow.svg');
   position: absolute;
@@ -41,6 +40,7 @@ body {
   height: 18px;
 }
 .help-btn:hover {
+  background: #669900;
   box-shadow: 0 0 10px #230;
 }
 .help-btn:active {
@@ -58,10 +58,14 @@ body {
 /* Utilities */
 
 /* animation */
+
 .animation,
 .animation::before,
 .animation::after  {
-  transition: ease-in .5s;
+  transition: all ease-in .5s;
+}
+.animation:active {
+  transition: .2s;
 }
 
 /* clearfix */
@@ -138,7 +142,7 @@ body {
 .btn-green:hover {
   box-shadow: 0 0 10px #230;
   color: #fff;
-  background: #7cbb02;
+  background: #669900;
   border: none;
 }
 .btn-green:active {
@@ -229,11 +233,17 @@ a {
 /* navbar */
 
 .navbar {
+  position: fixed;
+  z-index: 1;
   display: block;
+  width: 100%;
   line-height: 80px;
   font-size: 12px;
   text-transform: uppercase;
-
+  top: 0;
+  left: 0;
+  padding: 0 15px;
+  background: #0c325a;
 }
 .navbar-img {
   width: 15%;
@@ -255,7 +265,7 @@ a {
 /* jumbotron */
 
 .jumbotron {
-  height: 600px;
+  height: 680px;
   position: relative;
 }
 .jumbotron-txt{
@@ -317,6 +327,9 @@ a {
 .main-plan h2 {
   font-size: 34px
 }
+.main-plan a:hover {
+  color: #669900;
+}
 
 /* FOOTER */
 
@@ -332,7 +345,10 @@ a {
   width: 70%;
 }
 
+/* select level */
+
 .custom-select {
+  cursor: pointer;
   outline: none;
   display: block;
   font-size: 16px;
@@ -342,5 +358,15 @@ a {
   width: 100%;
   min-width: 130px;
   border:none;
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #808080;
+}
+.custom-select:hover {
+  border-bottom: solid 1px #669900;
+  color: #669900;
+
+}
+.custom-select:focus {
+  border-bottom: solid 1px #669900;
+  color: #669900;
+
 }
